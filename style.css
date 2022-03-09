@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    }
+.text, .text2 {
+    color: blue;
+}
+.block {
+    height: 200px;
+    width: 500px;
+    background-color: aqua;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    }
+.block2 {
+    height: 150px;
+    width: 400px;
+    background-color: brown;
+    }
+
+/*до слеш*/
+.title::before {
+    content: "/";
+    color: blue;
+    margin-right: 10px;
+}
+
+/*после кружок*/
+.title::after {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: brown;
+    margin-left: 5px;
+    border-radius: 50%;
+}
